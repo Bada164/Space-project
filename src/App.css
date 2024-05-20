@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   overflow: hidden;  
+  
+}
+.header{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  height: 100px;
+  
+}
+.logo{
+  padding-left: 3rem;
+  margin-left: 2rem;
+  width: 200px;
+  z-index: 100;
+}
+.line{
+  width:600px;
+  border-bottom: 1px solid gray;
+  transform: translateX(100px);
+  z-index: 150;
+
+}
+.navMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  backdrop-filter: blur(10px);
+  padding: 1rem 3rem 1rem 1rem;
+  background: rgba(17, 17, 17, 0.3);
+  width: 1200px;
+  height: 100px;
+  z-index: 100;
+}
+
+.navMenu li {
+  padding: 2rem 2rem;
+  margin-right: 3rem;
+  z-index: 100;
+  
+}
+.navMenu li a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+.navMenu li:hover{
+  border-bottom: solid white 3px;
+}
+
+.nav-active{
+  border-bottom: solid white 3px !important;
+}
+
+.home{
+  background: url("../src/assets/background-home-desktop.jpg") center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+ 
+}
+.home::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+.main-content{
+  font-family: 'Montserrat';
+  color: rgb(117, 226, 245);
+  width: 400px;
+  z-index: 10;
+}
+.main-content h2{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: lightgray
+}
+.main-content h1{
+  text-transform: uppercase;
+  color: white;
+font-size: 8rem;
+font-weight: 300;
+}
+.main-content p{
+  color: white;
+  line-height: 22px;
+  text-align: justify;
+}
+
+
+.explore{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  
+  border-radius: 50%;
+  padding: 2rem 2rem;
+  
+  font-size: 3rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase; */
+  z-index: 10;
+}
+.explore a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem 2rem;
+  z-index: 10;
+  font-size: 3rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+/* Destination Page */
+.destination-page{
+  background: url(../src/assets/background-destination-desktop.jpg) center center/cover no-repeat;
+  height: 100vh;
+ 
+}
+.destination-page .dest-title {
+ font-family: 'Montserrat';
+ text-transform: uppercase;
+ color: white;
+ margin-top: 5rem;
+ margin: 5rem 0 0 10rem;
+}
+.destination-page .dest-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.dest-content{
+  margin-top: 6rem;
+  display: flex;
+
+  justify-content: center;
+}
+
+.dest-content .dest-info{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 10rem;
+}
+.dest-content .dest-info h1{
+  color:white;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 400;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+.dest-content .dest-info p{
+ color: rgb(192, 192, 192);
+line-height: 22px;
+text-align: justify;
+font-family: 'Montserrat';
+padding-left: 1rem;
+line-height: 1.6rem;
+}
+.dest-content .dest-info .dest-menu{
+  display: flex;
+}
+.dest-content .dest-info .dest-menu li{
+  color: rgb(192, 192, 192);
+  font-family: 'Montserrat';
+  margin: 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  
+}
+
+.dest-content .dest-info .info-line{
+  width: 1000px;
+  border-bottom: 1px solid grey;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.dest-content .dest-info .travel-info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.dest-content .dest-info .travel-info .box{
+  margin: 1rem;
+}
+.dest-content .dest-info .travel-info .box h3{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: rgb(192, 192, 192);
+  font-size: 1rem;
+}
+.dest-content .dest-info .travel-info .box h4{
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.active{
+  border-bottom: solid 2px white;
+}
+
+
+/* Crew page */
+
+.crew-page{
+  background: url(../src/assets/background-crew-desktop.jpg) center center/cover no-repeat;
+  height: 100vh;
+ 
+}
+.crew-page .crew-title {
+ font-family: 'Montserrat';
+ text-transform: uppercase;
+ color: white;
+ margin-top: 5rem;
+ margin: 5rem 0 0 10rem;
+}
+.crew-page .crew-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+.crew-content{
+  display: flex;
+}
+.crew-content .crew-info{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin-left: 10rem;
+}
+.crew-content .crew-info h2{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 10rem;
+}
+.crew-content .crew-info h1{
+  color: white;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+.crew-content .crew-info p{
+  width: 500px;
+  color: rgb(192, 192, 192);
+line-height: 22px;
+text-align: justify;
+font-family: 'Montserrat';
+
+line-height: 1.6rem;
+}
+.crew-content .crew-info .crew-info-switch{
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.crew-content .crew-info .crew-info-switch li{
+  margin: 1rem;
+  background: none;
+  
+  background: gray;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+/* .crew-content .crew-info .crew-info-switch li button{
+  background: gray;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+} */
+
+.crew-content .crew-pic img{
+ margin: 4rem 10rem 0 0rem;
+ 
+}
+
+
+
+/* Tech page */
+.tech-page{
+  background: url(../src/assets/background-technology-desktop.jpg) center center/cover no-repeat;
+  height: 100vh;
+ 
+}
+.tech-page .tech-title {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: white;
+  margin-top: 5rem;
+  margin: 5rem 0 0 10rem;
+ }
+
+ .tech-page .tech-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.tech-page .tech-content{
+  display: flex;
+  width: 2000px;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.tech-page .tech-content .tech-info{
+  display: flex;
+  
+}
+.tech-page .tech-content .tech-info .tech-switch{
+  margin: 0 2rem;
+  width: 100px;
+  height: 500px;
+
+  
+}
+.tech-page .tech-content .tech-info .tech-switch li{
+  height: 70px;
+  width: 70px;
+   margin: 2rem 0; 
+  border: solid 1px grey;
+  border-radius: 50%;
+  color: white;
+  padding: 1rem 1.6rem;
+  font-size: 2rem;
+}
+ .li-active {
+  background: white !important;
+  color: black !important;
+}
+
+.tech-page .tech-content .tech-info h2{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: rgb(151, 148, 148);
+  font-weight: 400;
+}
+.tech-page .tech-content .tech-info h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem 0;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+.tech-page .tech-content .tech-info p{
+  width: 500px;
+  color: rgb(192, 192, 192);
+line-height: 22px;
+text-align: justify;
+font-family: 'Montserrat';
+font-size: 1.3rem;
+line-height: 1.6rem;
+}
+
+.tech-page .tech-content .tech-pic{
+  
+    margin: 0 0 50rem 15rem;
+ 
+}
+
+.crewActive {
+  margin: 1rem;
+  
+  
+  background: rgb(231, 231, 231) !important;
+  border: none ;
+  border-radius: 50%;
+  width: 30px ; 
+  height: 30px ;
+}
+
+
+
+@media(max-width: 768px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      
+    
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 400px;
+    margin-bottom: 2rem;
+  }
+  .logo{
+    padding-left: 4rem;
+    margin-left: 2rem;
+    width: 200px;
+    z-index: 100;
+  }
+  .line{
+    width:1000px;
+    border-bottom: 1px solid gray;
+    transform: translateX(100px);
+    margin-top: 2rem;
+    z-index: 150;
+  
+  }
+  .navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    color: white;
+    font-family: "Roboto", sans-serif;
+    backdrop-filter: blur(10px);
+    
+    background: rgba(17, 17, 17, 0.3);
+    
+    height: 300px;
+    z-index: 100;
+  }
+  
+  .navMenu li {
+    padding: 2rem 2rem;
+    margin-right: 3rem;
+    z-index: 100;
+    
+  }
+  .navMenu li a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 0;
+    text-transform: uppercase;
+  }
+  .navMenu li:hover{
+    border-bottom: solid white 3px;
+  }
+  
+  /* Home Page Mobile */
+.home{
+  background: url("../src/assets/background-home-mobile.jpg") center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  
+  overflow-y: scroll;
+}
+.home::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.main-content{
+  font-family: 'Montserrat';
+  color: rgb(117, 226, 245);
+  width: 400px;
+  z-index: 10;
+}
+.main-content h2{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: lightgray;
+  text-align: center;
+}
+.main-content h1{
+  text-transform: uppercase;
+  color: white;
+font-size: 8rem;
+font-weight: 300;
+}
+.main-content p{
+  color: white;
+  line-height: 22px;
+  text-align: justify;
+}
+
+
+.explore a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem 2rem;
+  z-index: 10;
+  font-size: 2.8rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+/* Destination Page Mobile */
+.destination-page{
+  background: url(../src/assets/background-destination-mobile.jpg) center center/cover no-repeat;
+  height: 100vh;
+ overflow-y: scroll;
+}
+.destination-page .dest-title {
+ font-family: 'Montserrat';
+ text-transform: uppercase;
+ color: white;
+ text-align: center;
+ margin: 1rem 1rem;
+}
+.destination-page .dest-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.dest-content{
+  margin-top: 6rem;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dest-content .dest-info{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+ 
+}
+.dest-content .dest-info h1{
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  width: 450px;
+   padding: 1rem 5rem 0.5rem 1.5rem; 
+}
+.dest-content .dest-info p{
+ color: rgb(192, 192, 192);
+line-height: 22px;
+text-align: justify;
+font-family: 'Montserrat';
+width: 450px;
+padding: 1rem 6rem 1rem 3rem;
+line-height: 1.6rem;
+}
+.dest-content .dest-info .dest-menu{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+.dest-content .dest-info .dest-menu li{
+  color: rgb(192, 192, 192);
+  font-family: 'Montserrat';
+  margin: 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  
+}
+
+.dest-content .dest-info .info-line{
+  width: 2000px;
+  border-bottom: 1px solid grey;
+  margin: 2rem 0;
+}
+
+.dest-content .dest-info .travel-info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  width: 380px;
+}
+.dest-content .dest-info .travel-info .box{
+  margin: 1rem;
+}
+.dest-content .dest-info .travel-info .box h3{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: rgb(192, 192, 192);
+  font-size: 1rem;
+}
+.dest-content .dest-info .travel-info .box h4{
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Crew page Mobile*/
+
+.crew-page{
+  background: url(../src/assets/background-crew-mobile.jpg) center center/cover no-repeat;
+  height: 100vh;
+ overflow-y: scroll;
+}
+.crew-page .crew-title {
+ font-family: 'Montserrat';
+ text-transform: uppercase;
+ color: white;
+margin: 0;
+text-align: center;
+padding: 0 1rem;
+}
+.crew-page .crew-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+.crew-content{
+  display: flex;
+  flex-direction: column;
+  
+}
+.crew-content .crew-info{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 0;
+  text-align: center;
+}
+.crew-content .crew-info h2{
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: gray;
+  font-weight: 400;
+ 
+  margin: 2rem 0 1rem 0;
+}
+.crew-content .crew-info h1{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 400px;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.crew-content .crew-info p{
+  width: 400px;
+  color: rgb(192, 192, 192);
+line-height: 22px;
+text-align: justify;
+font-family: 'Montserrat';
+padding: 1rem 3rem 1rem 3rem;
+line-height: 1.6rem;
+}
+.crew-content .crew-info .crew-info-switch{
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  
+}
+.crew-content .crew-info .crew-info-switch li{
+  margin: 1rem;
+  background: none;
+  
+  background: gray;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+/* .crew-content .crew-info .crew-info-switch li button{
+  background: gray;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+} */
+
+.crew-content .crew-pic img{
+ margin: 1rem 0 0 4rem;
+ height: 300px;
+ width: 300px;
+}
+
+/* Tech page  Mobile*/
+.tech-page{
+  background: url(../src/assets/background-technology-mobile.jpg) center center/cover no-repeat;
+  height: 100vh;
+ overflow-y: scroll;
+}
+.tech-page .tech-title {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: white;
+  margin: 0 3rem;
+  text-align: center;
+ }
+
+ .tech-page .tech-title span{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.tech-page .tech-content{
+  display: flex;
+  width: 2000px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.tech-page .tech-content .tech-info{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.tech-page .tech-content .tech-info .tech-switch{
+  margin: 0;
+  width: 380px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.tech-page .tech-content .tech-info .tech-switch li{
+  height: 70px;
+  width: 70px;
+   margin: 0 1rem; 
+  border: solid 1px grey;
+  border-radius: 50%;
+  color: white;
+  padding: 1rem 1.6rem;
+  font-size: 2rem;
+}
+ .li-active {
+  background: white !important;
+  color: black !important;
+}
+
+.tech-page .tech-content .tech-info h2{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: rgb(151, 148, 148);
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.tech-page .tech-content .tech-info h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem 0;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tech-page .tech-content .tech-info p{
+  width: 340px;
+  color: rgb(192, 192, 192);
+
+text-align: center;
+font-family: 'Montserrat';
+font-size: 1.3rem;
+line-height: 1.6rem;
+margin: 2rem 2rem;
+}
+
+.tech-page .tech-content .tech-pic{
+  
+    margin: 1rem 0 0 0;
+ 
+}
+}
+
